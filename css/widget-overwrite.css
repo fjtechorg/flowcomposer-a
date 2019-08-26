@@ -1,0 +1,118 @@
+div.tabs-parent div.tab-buttons>input[type='radio']+label{
+    color:#8f939b;
+}
+div.tabs-parent div.tab-buttons{
+    /*padding-left: 30px;*/
+}
+.widget-sub-headings {
+    font-size: 15px;
+    border-bottom: 2px solid #f1f3f7;
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: #5d656b;
+    margin-top: 20px;
+}
+
+div.tabs-parent div.tab-buttons div.tab-indicator{
+    background-color: #408FFF;
+    height:2px;
+    margin-left: 5px;
+    bottom: unset;
+}
+
+div.tabs-parent div.tab-buttons {
+    position: relative;
+    padding-left: 10px;
+    border-bottom: 1px #EEE solid;
+    line-height: 100%;
+}
+
+div.tabs-parent div.tab-buttons>input[type=‘radio’]+label {
+    font-size: 14px;
+    color: #646d73;
+    font-weight: 500;
+}
+
+div.settings-menu div.tab.type input[type='radio']:checked+label[for^='widget-type-'] span{
+    border-color: #408FFF;
+    color:#48535a;
+    box-shadow: inset 0px 0px 20px #F9FAFC;
+}
+
+input[type=radio]{
+    vertical-align: top;
+}
+
+.select2-container{
+    margin-top: 15px !important;
+}
+
+div.tabs-parent div.tab-buttons{
+    border-bottom: 2px #F1F3F7 solid;
+}
+
+div.settings-menu div.tab.type label[for^='widget-type-']{
+    padding:unset;
+}
+
+div.settings-menu div.tab label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6d767c;
+}
+
+body p {
+    margin: 0 0 10px 0;
+}
+
+div.tabs-parent div.tab-buttons>input[type='radio']+label{
+    font-size:13px;
+    font-weight:500;
+}
+
+input[type='text'], input[type='email'], input[type='password'], input[type='color'], textarea {
+    border: 1px rgba(0,132,255,0.2) solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    height: 35px;
+    line-height: 100%;
+    background: #ffffff;
+    min-height: 46px;
+}
+select {
+    border: 1px #ececec solid;
+    background: #fff;
+}
+
+div.settings-menu div.tab.type label[for^='widget-type-'] span , div.settings-menu div.tab.looks div.slide-in-location-options label{
+    background:white;
+}
+
+.styling_widget_builder_question{
+    float: right;
+    font-weight: 600;
+}
+
+/* preview container */
+.styling_widget-headline:hover, .styling_widget-desc:hover{
+    border: 1px dashed #c4ccd6;
+    border-radius: 4px;
+    padding: 10px 2px;
+    background: #6b6b6b0a;
+}
+
+.styling_widget-headline, .styling_widget-desc{
+    border: 1px dashed transparent;
+    border-radius: 4px;
+    padding: 10px 2px;
+}
+.styling-headline_container, .styling-desc_container{
+    display: inline-flex;
+}
+.styling-widget_preview_pencil{
+    padding: 10px 0px 0px 10px;
+}

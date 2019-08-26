@@ -1,0 +1,17 @@
+.graph-container {
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	padding: 20px 15px 15px 15px;
+	margin: 15px auto 30px auto;
+	background: #fff;
+
+}
+
+.graph-placeholder {
+	width: 300px;
+	height: 300px;
+	font-size: 14px;
+}
+
+.pieLabel{font-size:18px}

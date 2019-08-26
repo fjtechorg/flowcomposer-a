@@ -1,0 +1,408 @@
+.flowchart-operator {
+    z-index: 9999999;
+}
+
+.flowchart-operator {
+    position: absolute;
+    width: 140px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0em 0em 2em 0em rgb(231,232,233);
+    -webkit-box-shadow: 0em 0em 2em 0em rgb(231,232,233);
+    background: #ffffff;
+    /* pointer-events: initial; */
+}
+
+
+
+.flowchart-operator.selected {
+    border-color: #bdbdbd;
+    border: 1px solid #0a82fb8c;
+    border-radius: 10px;
+    z-index: 99999998;
+
+}
+
+.flowchart-container
+{
+    position:relative;
+    overflow:hidden
+}
+.flowchart-links-layer,.flowchart-operators-layer,.flowchart-temporary-link-layer
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%
+}
+.flowchart-operator-inputs .flowchart-operator-connector-arrow,.flowchart-operator-inputs .flowchart-operator-connector-small-arrow
+{
+    left:-7px
+}
+.flowchart-operators-layer,.flowchart-temporary-link-layer
+{
+    pointer-events:none
+}
+.flowchart-temporary-link-layer
+{
+    display:none
+}
+.flowchart-link,.flowchart-operator
+{
+    cursor:default
+}
+.flowchart-operator-connector
+{
+    position:relative;
+    padding-top:5px;
+    padding-bottom:5px
+}
+.flowchart-operator-connector-label
+{
+    font-size:small
+}
+.flowchart-operator-inputs .flowchart-operator-connector-label
+{
+    margin-left:14px
+}
+.flowchart-operator-outputs .flowchart-operator-connector-label
+{
+    text-align:right !important;
+    background: white;
+    border-radius: 3px;
+    font-weight: normal;
+    color:#e46e6e;
+    border: 1px solid #e46e6e;
+}
+
+.flowchart-operator-outputs .flowchart-operator-connector-label-quickreply
+{
+    text-align:right !important;
+    background: white;
+    color: #0084FF;
+    border-radius: 3px;
+    font-weight: normal;
+    border: 1px solid #0084FF;
+}
+
+.flowchart-operator-outputs .flowchart-operator-connector-label-button
+{
+    text-align:right !important;
+    background: white;
+    color: #4cc175;
+    border-radius: 3px;
+    font-weight: normal;
+    border: 1px solid #4cc175;
+}
+.flowchart-operator-outputs .flowchart-operator-connector-label:empty, .flowchart-operator-outputs .flowchart-operator-connector-label-button:empty, .flowchart-operator-outputs .flowchart-operator-connector-label-quickreply:empty
+{
+    display:none;
+}
+.flowchart-operator-outputs .flowchart-operator-connector-label:not(:empty),.flowchart-operator-outputs .flowchart-operator-connector-label-button:not(:empty),.flowchart-operator-outputs .flowchart-operator-connector-label-quickreply:not(:empty)
+{
+    padding: 2px 5px 2px 5px;
+    margin: -5px 5px 0px 0px;
+}
+
+.flowchart-operator-inputs .flowchart-operator-connector-arrow
+{
+
+    width:0;
+    height:0;
+    border:7px solid #bdbdbd;
+    border-radius:50%;
+    position:absolute;
+    top:3px
+}
+
+.flowchart-operator-outputs .flowchart-operator-connector-arrow
+{
+    width:0;
+    height:0;
+    border:7px solid #e46e6e;
+    border-radius:50%;
+    position:absolute;
+    top:3px
+}
+
+.flowchart-operator-connector-arrow-quickreply
+{
+
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #0084FF;
+    position: absolute;
+    top:3px
+}
+.flowchart-operator-connector-arrow-button
+{
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #4cc175;
+    position: absolute;
+    top:3px
+
+}
+
+.flowchart-operator-outputs .flowchart-operator-connector:hover .flowchart-operator-connector-arrow
+{
+    border-left: 10px solid #ff7979;
+
+}
+.flowchart-operator-connector:hover .flowchart-operator-connector-arrow-quickreply
+{
+    border-left: 10px solid #52baff;
+
+}
+
+.flowchart-operator-connector:hover .flowchart-operator-connector-arrow-button{
+    border-left: 10px solid #57e48d;
+
+}
+
+
+.flowchart-operator-outputs .flowchart-operator-connector-arrow,.flowchart-operator-outputs .flowchart-operator-connector-arrow-button,.flowchart-operator-outputs .flowchart-operator-connector-arrow-quickreply
+{
+    right:-10px
+}
+
+.unselectable
+{
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+.flowchart-operator .flowchart-operator-title {
+    width: 100%;
+    padding: 14px 35px 7px 15px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border-top: 2px solid transparent !important;
+    border-bottom: none !important;
+    min-height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: move;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #F9FAFC;
+    color: #888b8c;
+}
+
+.flowchart-operator-content {
+    clear: both;
+    word-break: break-word;
+    position: relative;
+    margin-top: 60px;
+    padding: 10px;
+    border-top : solid 1px #f2f2f2;
+}
+
+.flowchart-operator-inputs, .flowchart-operator-outputs{
+    float: left;
+    width: 50%;
+    padding-bottom: 7px;
+}
+
+.flowchart-operator-connector{
+    white-space: nowrap;
+}
+
+
+.flowchart-operator .flowchart-operator-inputs-outputs
+{
+    display:block !important;
+    width:100%;
+    margin-top:10px;
+}
+.flowchart-default-operator .flowchart-operator-outputs,.flowchart-operator .flowchart-operator-inputs
+{
+    display:table-cell;
+}
+.flowchart-operator {
+    min-height: 60px;
+    min-width: 220px;
+}
+.msgboxcontainer
+{
+    border-left: 1px solid #e7eaec !important;
+    border-right: 1px solid #e7eaec !important;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 25px;
+    border-top: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-color: #dadada;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 10px 10px -10px #eaeaea;
+}
+.msgboxcontainer.selected
+{
+    border-color:#CCC !important;
+}
+.flowchart-operator-connector-set
+{
+    height:20px;
+
+}
+.flowchart-operator-footer {
+    background: #fff none repeat scroll 0 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    height: 30px;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-delete
+{
+    float:right;
+
+}
+
+.card-make-first {
+    position: absolute;
+}
+.card-edit-settings
+{
+    /*float:left;*/
+    position:absolute;
+    right:25px;
+
+}
+
+.flowchart-operator:hover {
+    transform: scale(1.05);
+    border: 1px solid #0a82fb8c;
+    z-index: 99999999;
+    opacity: 0.8;
+
+}
+
+.first-active {
+
+
+}
+
+.first-inactive {
+
+}
+
+.card-image-preview{
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-bottom: 50%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #f3f3f3;
+}
+
+
+.card-video-preview{
+    max-width: 100%;
+    border-radius: 0;
+}
+
+
+ol.vertical {
+    margin: 0 0 9px 0;
+    min-height: 10px; }
+
+ol.vertical li {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed #f0eded;
+    color: #0a82fb; }
+ol.vertical li.placeholder {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none; }
+
+ol.vertical li.placeholder:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    left: -5px;
+    top: -4px;
+    border: 5px solid transparent;
+    border-left-color: #0a82fb;
+    border-right: none; }
+.active_locale{
+    border: 1px dashed #0a82fb;
+}
+.hoveraddon{
+    opacity: 1;
+    display: none;
+    padding: 20px 15px;
+}
+
+/*emoji adjustment*/
+i.emoji-picker-icon.emoji-picker.fa.fa-smile-o{
+    position: absolute !important;
+    margin: 0 !important;
+    right: 65px !important;
+    top: 20px !important;
+    float: none !important;
+    z-index: 0;
+}
+
+.emoji-menu{
+    background: white !important;
+    right: 103px !important;
+    top: 40px !important;
+}
+
+.emoji-wysiwyg-editor
+{
+    display: flex !important;
+    align-items: center;
+    border: 1px solid #f5f6f9;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #424c54;
+}
+
+.menu-icon{
+    font-size: 18px;
+}
+
+.settings-handle{
+    border-left: unset!important;
+}
+.add_menu_list_item {
+    margin-top: -30px !important;
+    border: unset !important;
+}
+
+.input-group .form-control:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child){
+    z-index: 0;
+}
+
+.dz-filename {
+    display: none;
+}

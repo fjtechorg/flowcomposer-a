@@ -1,0 +1,146 @@
+.table-noborder{
+	border:none;
+}
+.table-noborder td{border:none;padding-top: 5px;}
+.flowchart-example-container {
+  height: 200px;
+  border: 1px solid #BBB;
+  margin-bottom: 10px;
+}
+
+.flowchart-operator-connector-arrow {
+  top: 4px;
+}
+
+.flowchart-operator-connector-small-arrow {
+  top: 9px;
+}
+
+.flowchart-operator-connector-set{
+	margin-top:5px;
+    height:auto;
+	
+}
+
+.flowchart-example pre {
+  display: none;
+}
+
+#create_operator {
+  margin-bottom: 10px;
+}
+
+.flowchart-example-event {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #3366FF;
+}
+
+#flowchart_data {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 140px;
+}
+
+#last_event_example_6 {
+  display: block;
+  overflow-y: auto;
+  height: 100px;
+}
+h4 {
+  margin-top: 40px;
+}
+
+#operator_properties, #link_properties {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 4px solid;
+  padding: 10px;
+}
+
+#example_9 {
+  width: 4000px;
+  height: 4000px;
+  background: white;
+}
+
+#visualbuilder {
+  width: 9000px;
+  height: 9000px;
+  background: white;
+}
+
+#chart_container {
+    width: 100%;
+    height: 607px;
+    /*height: auto;*/
+    overflow: hidden;
+    background: repeating-linear-gradient(
+      45deg,
+      #eee,
+      #eee 10px,
+      #e5e5e5 10px,
+      #e5e5e5 20px
+    );
+    border: 1px solid #c0c0c0;
+}
+
+
+
+.draggable_operators_label {
+  margin-bottom: 5px;
+}
+
+.draggable_operators_divs {
+
+}
+
+.delete_selected_button {
+  margin-bottom: 20px;
+}
+
+.msg_content{
+    float:right;
+    min-height: 90px;
+    width: 100%;
+    }
+
+
+.flowchart-operator-inputs .flowchart-operator-connector-set{padding-bottom: 20px;}
+
+.delete_selected_button{text-align:center;font-weight:bold;background-color:#e1e1e1;color: #444;padding: 5px 0;margin-bottom: 20px;border:1px solid  #ccc;    opacity: 1;}
+
+td.smeslabel{padding-bottom:70px }
+.msg_buttoncontent{position: relative; padding-right:5px}
+
+.shopify_product {
+  width: 25%;
+  height: 270px;
+  margin-right: 0px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.shopify_product_image{
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.shopify_product_image img{
+  width: auto;
+  height: 140px;
+  margin: 0 auto;
+}
+#shopify_product_title {
+  font-weight: bold;
+  height: 25px;
+  font-size: 15px;
+  overflow: hidden;
+}
+#shopify_product_price{height:25px;}
+.add_shopify_product{font-weight:bold;}
+
+.amazon_product{width:160px;height:310px;margin-right:7px; margin-bottom:10px;background-color: #fff}

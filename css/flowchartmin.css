@@ -1,0 +1,269 @@
+.flowchart-operator {
+    z-index: 9999999;
+}
+.flowchart-container
+{
+	position:relative;
+	overflow:hidden
+}
+.flowchart-links-layer,.flowchart-operators-layer,.flowchart-temporary-link-layer
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%
+}
+.flowchart-operator-inputs .flowchart-operator-connector-arrow,.flowchart-operator-inputs .flowchart-operator-connector-small-arrow
+{
+	left:-7px
+}
+.flowchart-operators-layer,.flowchart-temporary-link-layer
+{
+	pointer-events:none
+}
+.flowchart-temporary-link-layer
+{
+	display:none
+}
+.flowchart-link,.flowchart-operator
+{
+	cursor:default
+}
+
+.flowchart-operator-inputs, .flowchart-operator-outputs{
+	float: left;
+	width: 50%;
+}
+
+.flowchart-operator-connector{
+	white-space: nowrap;
+}
+
+
+.visual_img_preview{
+	background-position: 50% 50%;
+	background-size: cover;
+	padding-bottom: 50%;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #f3f3f3;
+}
+
+
+.flowchart-operator-connector
+{
+	position:relative;
+	padding-top:5px;
+	padding-bottom:5px
+}
+.flowchart-operator-connector-label
+{
+	font-size:small
+}
+.flowchart-operator-inputs .flowchart-operator-connector-label
+{
+	margin-left:14px
+}
+.flowchart-operator-outputs .flowchart-operator-connector-label
+{
+	text-align:right !important;
+	background: white;
+	color: #0084FF;
+	border-radius: 3px;
+	font-weight: normal;
+    border: 1px solid #dbdddf;
+}
+
+
+.flowchart-operator-outputs .flowchart-operator-connector-label-quickreply
+{
+	text-align:right !important;
+	background: white;
+	color: #0084FF;
+	border-radius: 3px;
+	font-weight: normal;
+	border: 1px solid #0084FF;
+}
+
+.flowchart-operator-outputs .flowchart-operator-connector-label-button
+{
+	text-align:right !important;
+	background: white;
+	color: #4cc175;
+	border-radius: 3px;
+	font-weight: normal;
+	border: 1px solid #4cc175;
+}
+.flowchart-operator-outputs .flowchart-operator-connector-label:empty, .flowchart-operator-outputs .flowchart-operator-connector-label-button:empty, .flowchart-operator-outputs .flowchart-operator-connector-label-quickreply:empty
+{
+    display:none;
+}
+.flowchart-operator-outputs .flowchart-operator-connector-label:not(:empty),.flowchart-operator-outputs .flowchart-operator-connector-label-button:not(:empty),.flowchart-operator-outputs .flowchart-operator-connector-label-quickreply:not(:empty)
+{
+	padding: 2px 5px 2px 5px;
+	margin: -5px 5px 0px 0px;
+}
+.flowchart-operator-connector-arrow
+{
+	width:0;
+	height:0;
+	border:7px solid #0084FF;
+    border-radius:50%;
+	position:absolute;
+	top:0
+}
+
+.flowchart-operator-connector-arrow-quickreply
+{
+	width:0;
+	height:0;
+	border:7px solid #0084FF;
+	border-radius:50%;
+	position:absolute;
+	top:0
+}
+.flowchart-operator-connector-arrow-button
+{
+	width:0;
+	height:0;
+	border:7px solid #4cc175;
+	border-radius:50%;
+	position:absolute;
+	top:0
+}
+
+.flowchart-operator-connector:hover .flowchart-operator-connector-arrow, .flowchart-operator-connector:hover .flowchart-operator-connector-arrow-quickreply
+{
+	border:7px solid #52baff;
+}
+
+.flowchart-operator-connector:hover .flowchart-operator-connector-arrow-button{
+	border:7px solid #55d782;
+
+}
+.flowchart-operator-outputs .flowchart-operator-connector-arrow,.flowchart-operator-outputs .flowchart-operator-connector-arrow-button,.flowchart-operator-outputs .flowchart-operator-connector-arrow-quickreply
+{
+	right:-7px
+}
+
+.unselectable
+{
+	-moz-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.flowchart-operator
+{
+	position:absolute;
+	min-width:180px;
+	background:#fff;
+	pointer-events:initial;
+}
+.flowchart-operator .flowchart-operator-title
+{
+	width:100%;
+	padding: 14px 35px 7px 15px;
+	font-weight:700;
+	box-sizing:border-box;
+    border-top: 2px solid #0084FF !important;
+    border-bottom: none !important;
+	background:#fdfdfd;
+	min-height: 48px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	cursor:move;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 25px;
+	background: #F9FAFC;
+	color: #888b8c;
+	/*border: 1px solid #9cc9fd;
+	text-shadow: 1px 1px #297ebb;*/
+}
+
+.flowchart-operator .flowchart-operator-inputs-outputs
+{
+	display:block !important;
+	width:100%;
+	margin-top:10px;
+}
+.flowchart-default-operator .flowchart-operator-outputs,.flowchart-operator .flowchart-operator-inputs
+{
+	display:table-cell;
+}
+.flowchart-operator
+{
+	min-height:60px;
+	min-width: 220px;
+}
+.msgboxcontainer
+{
+    border-left: 1px solid #e7eaec !important;
+    border-right: 1px solid #e7eaec !important;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 25px;
+	border-top: none;
+	border-bottom-left-radius: 25px;
+	border-bottom-color: #dadada;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 10px 10px -10px #eaeaea;
+}
+.msgboxcontainer.selected
+{
+	border-color:#CCC !important;
+}
+.flowchart-operator-connector-set
+{
+	height:20px;
+	 
+}
+.flowchart-operator-footer
+{
+	 background: #fff none repeat scroll 0 0;
+	    box-sizing: border-box;
+	    font-weight: 300;
+	    height: 30px;
+	    overflow: hidden;
+	    padding: 5px;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    width: 100%;
+    border-bottom-left-radius: 25px;
+}
+.operator_delete
+{
+	float:right;
+	 
+}
+.operator_edit_settings
+{
+	/*float:left;*/
+	position:absolute;
+	right:25px;
+	 
+}
+
+.card_preview_content {
+	word-break: break-word;
+	line-height: 18px;
+	position: relative;
+	margin-top: 25px;
+	border: dashed #f0f0f0;
+	padding: 10px;
+	border-top-width: 1px;
+	border-left-width: 0;
+	border-bottom-width: 0;
+	border-right-width: 0;
+}
+
